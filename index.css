@@ -1,0 +1,217 @@
+body{
+    margin: 0;
+    height: 100%px;
+}
+header{
+    height: 75px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+    left: 0;
+}
+.movewrap{
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+}
+.movewrap >div{
+
+    width: 100%;
+}
+
+.wrapper{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.menu{
+    list-style: none;
+    float: right;
+    display: flex;
+
+}
+
+.menu a{
+    line-height: 50px;
+    color: #808080;
+    padding: 0 15px;
+    text-decoration: none;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 20px;
+}
+
+.menu a:hover{
+    color: black;
+}
+
+.first{
+    background: url(./익명\ 겨울배경화면.png) fixed; 
+    height: 800px;
+
+}
+.second{
+    background-color: #F6F5F0;
+    height: 600px;
+}
+
+.moving{
+    width: 1900px;
+    height: 600px;
+    background: url(./Kirby_Star_Allies-03.jpg) 0 center/ 1500px repeat-x;
+    animation: movebg 5.5s linear infinite;
+
+}
+
+.movewrap h1{
+    font-family: 'Do Hyeon', sans-serif;
+    color: whitesmoke;
+    font-size: 40px;
+    position: absolute;
+    top: 70px;
+    right: 700px;
+    width: 300px;
+
+    animation: rightslide 3s infinite;
+}
+
+
+.movewrap .moving .pocket{
+    position: absolute;
+    top: 50px;
+    left: 600px;
+}
+
+.Kirby{
+    position: absolute;
+    top: 800px;
+    left: 50px;
+}
+
+.photo{
+    position: absolute;
+    top: 100px;
+    right: 200px;
+}
+
+.first h1{
+    font-size: 5em;
+    width: 1000px;
+    font-family: 'Do Hyeon', sans-serif;
+    position: absolute;
+
+    top: 200px;
+    left: 300px;
+
+    animation: slide 1s ease-out;
+}
+
+@keyframes movebg{
+    0% {
+        background-position: 0 center ; }
+ 
+    100% {
+        background-position: -1500px center;
+    }   
+}
+
+@keyframes rightslide{
+    from{
+        left: 30px;
+    }
+    to{
+        left: 900px;
+        opacity: 1;
+    }
+}
+
+@keyframes rightslideoff{
+    from{
+        right: -100px;
+    }
+    to{
+        right:300px;
+        opacity: 1;
+    }
+}
+
+@keyframes slide{
+    from{
+        left: -100px;
+    }
+    to{
+        left:300px;
+        opacity: 1;
+    }
+}
+
+@keyframes disappear{
+    from{
+        left:300px;
+        opacity: 1;
+    }
+    to{
+        left: -100px;
+        opacity: 0;
+    }
+}
+
+@keyframes again{
+    from{
+        left: -100px;
+        opacity: 0;
+    }
+    to{
+         left: 300px;
+         opacity: 1;
+    }
+}
+
+.text_box{
+    font-family: 'Do Hyeon', sans-serif;
+    position: absolute;
+    right:300px;
+    font-size: 3rem;
+    text-align: center;;
+    padding: 200px 0px;
+}
+
+.text_box .text{
+    right:300px;
+}
+  
+.blink {
+    animation: blink 1s infinite;
+    font-size: 3rem;
+}
+  
+@keyframes blink {
+    to {
+      opacity: 0;
+    }
+}
+
+footer{
+    background-color: #3c3935;
+    height: 75px;
+}
+
+.foo_div{
+    text-align: center;
+}
+
+.foo_div span{
+    font-size: 15px;
+    color: white;
+}
+
+.foo_div p{
+    margin-top: 5px;
+    color: white;
+}
+
+.foo_div img{
+
+    padding: 3px 4px;
+
+}
